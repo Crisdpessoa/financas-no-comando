@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças no Comando - Organização para Evolução Financeira</title>
+    <!-- Carrega o Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração do Tailwind para usar a paleta de cores e fontes -->
+
+
+
+    <style>
+        /* Tipografia Atualizada: Montserrat (Título) e Open Sans (Corpo) para um look mais clean e suave */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap');
+        
+        .font-title { font-family: 'Montserrat', sans-serif; }
+        .font-body { font-family: 'Open Sans', sans-serif; }
+        
+        /* Cores da Paleta: Cinza Escuro (Grafite) e Verde Menta */
+        .bg-mint { background-color: #5CCEA1; } /* Verde Menta - Destaque Principal */
+        .text-mint { color: #5CCEA1; }
+
+        .bg-dark-gray { background-color: #333333; } /* Grafite - Contraste Principal */
+        .text-dark-gray { color: #333333; }
+
+        /* Cor de Fundo Suave (Cinza Gelo) para seções clean */
+        .bg-light-gray { background-color: #F0F4F8; }
+
+        /* Efeito Hover Menta */
+        .hover-mint-dark:hover { background-color: #49B387; } 
+
+        /* Estilo Apple: Botões com canto mais arredondado */
+        .btn-apple {
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Estilo Apple: Layout de seção de tela cheia (para a Hero) */
+        .hero-screen-height {
+            min-height: calc(100vh - 80px); /* Altura da tela menos o header */
+        }
+    </style>
+</head>
+
+<body class="font-body bg-white text-dark-gray antialiased">
+
+    <!-- 1. HEADER (Cabeçalho Fixo e Minimalista) -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Nome da Marca -->
+            <div class="flex items-center space-x-2">
+                <a href="#" class="text-2xl font-bold font-title tracking-tight text-dark-gray">Finanças no Comando</a>
+            </div>
+            
+            <!-- Links de Navegação Minimalista -->
+            <div class="hidden md:flex space-x-10 text-base font-medium">
+                <a href="#organizacao" class="text-gray-700 hover:text-mint transition duration-300">Organização</a>
+                <a href="#evolucao" class="text-gray-700 hover:text-mint transition duration-300">Evolução</a>
+                <a href="#servicos" class="text-gray-700 hover:text-mint transition duration-300">Serviços</a>
+            </div>
+
+            <!-- CTA Principal (Botão) - Atualizado para Foco no Crescimento -->
+            <a href="#contato" class="hidden sm:inline-flex items-center px-6 py-2 border-2 border-mint text-base font-semibold btn-apple text-mint bg-white hover:bg-mint hover:text-white transition duration-300">
+                Focar no Crescimento
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- 2. HERO SECTION - Foco na Evolução Financeira (Apple Style) -->
+        <section id="hero" class="hero-screen-height flex items-center justify-center pt-16 pb-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                
+                <!-- Tagline/Lema da Empresa -->
+                <p class="text-xl md:text-2xl font-semibold uppercase text-mint mb-4 block font-title tracking-widest">
+                    Cuidando das finanças enquanto você foca no crescimento.
+                </p>
+                
+                <!-- Headline Gigante -->
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-extrabold font-title leading-none tracking-tighter text-dark-gray mb-6">
+                    Seu negócio, finalmente, no <span class="text-mint">Comando.</span>
+                </h1>
+                
+                <!-- Subtítulo e CTA - Reforça o papel de Assistente Virtual/Ágil -->
+                <p class="mt-8 text-2xl md:text-3xl text-gray-700 mb-12 font-body">
+                    Sua nova "Assistência Financeira Virtual". Simplificamos a rotina para que você tenha o controle e a previsibilidade que precisa para crescer.
+                </p>
+                
+                <!-- Botão CTA em destaque - MENTA (Frase de contato simplificada) -->
+                <a href="https://wa.me/4915213992164" target="_blank" class="inline-flex items-center justify-center px-10 py-4 text-xl font-bold btn-apple text-white bg-mint hover-mint-dark transition duration-500 transform hover:scale-105 font-title">
+                    ENTRE EM CONTATO VIA WHATSAPP
+                </a>
+
+                <!-- Símbolo Visual de Crescimento -->
+                <!--<div class="mt-20 flex justify-center opacity-70">
+                    <svg class="w-24 h-24 text-mint" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.5 16.5L12 20l-3.5-3.5" opacity="0.4"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3c-1.2 0-3 2.5-3 6v4l-2 3h10l-2-3V9c0-3.5-1.8-6-3-6z"></path>
+                        <circle cx="12" cy="10" r="1" stroke-width="1.5"></circle>
+                    </svg>
+                </div>-->
+                <div class="mt-20 flex justify-center opacity-70">
+                    <svg class="w-24 h-24 text-mint" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M21 7V3m0 0h-4m4 0l-7 7-4-4-6 6M3 21h18" opacity="0.3"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SEÇÃO 1: A TRANSFORMAÇÃO (Organização primeiro, Lucro depois) -->
+        <!--<section id="organizacao" class="py-24 md:py-36 bg-dark-gray text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl md:text-6xl font-extrabold font-title mb-16 leading-tight">
+                    O Caos Pesa. A Terceirização Libera.
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-12 text-left">-->
+                    
+                    <!-- Bloco 1: Antes (O Peso do Caos) - CORREÇÃO DE OPACIDADE DOS ÍCONES APLICADA AQUI -->
+                    <!--<div class="p-8 md:p-12 bg-dark-gray/90 border border-red-600 rounded-3xl shadow-xl">
+                        <h3 class="text-3xl font-bold font-title text-white mb-4">Antes da Organização</h3>
+                        <p class="text-gray-400 text-lg mb-6">Você gasta tempo e energia em atividades que não geram receita:</p>
+                        <ul class="space-y-4 text-gray-300">
+                            
+                            <li class="flex items-center text-xl">
+                                <svg class="w-6 h-6 text-yellow-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 7c-.77-1.333-2.694-1.333-3.464 0L3.39 16c-.77 1.333.192 3 1.732 3z"></path>
+                                </svg>
+                                <span class="font-bold">Dívidas Inesperadas:</span> Pagamentos perdidos ou duplicados.
+                            </li>
+
+                            <li class="flex items-center text-xl">
+                                <svg class="w-6 h-6 text-yellow-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 7c-.77-1.333-2.694-1.333-3.464 0L3.39 16c-.77 1.333.192 3 1.732 3z"></path>
+                                </svg>
+                                <span class="font-bold">Incerteza do Lucro:</span> "Será que estou lucrando de verdade?"
+                            </li>
+
+                            <li class="flex items-center text-xl">
+                                <svg class="w-6 h-6 text-yellow-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 7c-.77-1.333-2.694-1.333-3.464 0L3.39 16c-.77 1.333.192 3 1.732 3z"></path>
+                                </svg>
+                                <span class="font-bold">Exaustão de Tempo:</span> Perdendo horas com planilhas e burocracia.
+                            </li>
+
+                        </ul>
+                    </div>-->
+                    <!-- Bloco 2: Depois (A Leveza da Assistência) - Onde o texto já era Dark Gray no fundo claro (Alto Contraste) -->
+                    <!--<div class="p-8 md:p-12 bg-mint/10 border border-mint/50 rounded-3xl shadow-xl">
+                        <h3 class="text-3xl font-bold font-title text-mint mb-4">Depois do "Comando"</h3>
+                        <p class="text-gray text-lg mb-6">Agora, o tempo é seu. Seu foco se move para "Vendas e Estratégia", com a certeza de que a base está sólida.</p>
+                        <ul class="space-y-4 text-gray">
+                            <li class="flex items-center text-xl"><svg class="w-6 h-6 text-mint mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="font-bold">Foco no Core Business:</span> Seu tempo é liberado para focar 100% na "evolução" do seu produto/serviço.
+                            </li>
+                            <li class="flex items-center text-xl"><svg class="w-6 h-6 text-mint mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="font-bold">Previsibilidade de Caixa:</span> Relatórios simples e visuais que eliminam a incerteza e dão "controle" sobre o futuro financeiro.
+                            </li>
+                            <li class="flex items-center text-xl"><svg class="w-6 h-6 text-mint mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="font-bold">Decisão Baseada em Dados:</span> Recebimento de informações estratégicas com rapidez, confidencialidade e segurança, permitindo agir imediatamente sem preocupações.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <section id="organizacao" class="py-24 md:py-40 bg-dark-gray text-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                
+                <div class="text-center mb-20 md:mb-28">
+                    <h2 class="text-4xl md:text-6xl font-extrabold font-title leading-tight">
+                        O Caos Pesa. A Terceirização Libera.
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                    
+                    <div class="flex flex-col h-full p-10 md:p-14 bg-[#1a1a1a] border border-red-600/20 rounded-[2.5rem] shadow-xl">
+                        <div class="flex-grow">
+                            <h3 class="text-3xl font-bold font-title text-white mb-6">Antes da Organização</h3>
+                            <p class="text-gray-400 text-lg mb-10">Você gasta tempo e energia em atividades que não geram receita:</p>
+                            
+                            <div class="max-w-md mx-auto">
+                                <ul class="space-y-10">
+                                    <li class="flex items-start">
+                                        <svg class="w-8 h-8 text-red-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+                                        </svg>
+                                        <span class="text-xl leading-snug"><span class="font-bold block text-white mb-1">Dívidas Inesperadas:</span> Pagamentos perdidos ou duplicados.</span>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <svg class="w-8 h-8 text-red-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+                                        </svg>
+                                        <span class="text-xl leading-snug"><span class="font-bold block text-white mb-1">Incerteza do Lucro:</span> "Será que estou lucrando de verdade?"</span>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <svg class="w-8 h-8 text-red-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+                                        </svg>
+                                        <span class="text-xl leading-snug"><span class="font-bold block text-white mb-1">Exaustão de Tempo:</span> Perdendo horas com planilhas e burocracia.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col h-full p-10 md:p-14 bg-mint/5 border border-mint/30 rounded-[2.5rem] shadow-lg">
+                        <div class="flex-grow">
+                            <h3 class="text-3xl font-bold font-title text-mint mb-6">Depois do "Comando"</h3>
+                            <p class="text-gray-300 text-lg mb-10">Agora, o tempo é seu. Seu foco se move para "Vendas e Estratégia", com a certeza de que a base está sólida.</p>
+                            
+                            <div class="max-w-md mx-auto">
+                                <ul class="space-y-10">
+                                    <li class="flex items-start">
+                                        <svg class="w-8 h-8 text-mint mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="text-xl leading-snug"><span class="font-bold block text-mint mb-1">Foco no Core Business:</span> Seu tempo é liberado para focar 100% na "evolução" do seu produto/serviço.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-8 h-8 text-mint mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="text-xl leading-snug"><span class="font-bold block text-mint mb-1">Previsibilidade de Caixa:</span> Relatórios simples e visuais que eliminam a incerteza e dão "controle" sobre o futuro financeiro.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-8 h-8 text-mint mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="text-xl leading-snug"><span class="font-bold block text-mint mb-1">Decisão Baseada em Dados:</span> Recebimento de informações estratégicas com rapidez, confidencialidade e segurança, permitindo agir imediatamente sem preocupações.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SEÇÃO 2: METODOLOGIA R.O.I. - O Caminho da Organização (Reforça o Agile/Online) -->
+        <!--<section id="metodologia" class="py-24 md:py-36 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <span class="text-sm font-semibold uppercase text-mint mb-3 block font-title tracking-widest text-center">ORGANIZAR PARA CRESCER</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-title text-center text-dark-gray mb-16">
+                    A Metodologia R.O.I. (Rotina, Organização, Inteligência)
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-10"> -->
+                    
+                    <!-- Passo 1: Rotina Financeira (Destaque para o WhatsApp/Agilidade) -->
+                    <!--<div class="p-8 rounded-xl border border-gray-100 shadow-lg text-center bg-light-gray/50 hover:shadow-2xl transition duration-300">
+                        <div class="w-16 h-16 bg-mint/20 text-mint rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-extrabold font-title">R</div>
+                        <h3 class="text-2xl font-bold font-title text-dark-gray mb-3">Rotina: A Simplificação Ágil</h3>
+                        <p class="text-gray-600">Eliminamos o retrabalho. Com um processo simples via "WhatsApp", transformamos notas fiscais e comprovantes em dados estruturados de forma "ágil e online", estabelecendo uma rotina "sem falhas".</p>
+                    </div> -->
+
+                    <!-- Passo 2: Organização Financeira -->
+                    <!--<div class="p-8 rounded-xl border border-gray-100 shadow-lg text-center bg-light-gray/50 hover:shadow-2xl transition duration-300">
+                        <div class="w-16 h-16 bg-mint/20 text-mint rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-extrabold font-title">O</div>
+                        <h3 class="text-2xl font-bold font-title text-dark-gray mb-3">Organização: O Controle Absoluto</h3>
+                        <p class="text-gray-600">Nós centralizamos Contas a Pagar e a Receber, realizamos a conciliação bancária e a emissão de boletos. Você ganha "clareza" sobre o seu caixa.</p>
+                    </div> -->
+
+                    <!-- Passo 3: Inteligência Financeira -->
+                    <!--<div class="p-8 rounded-xl border border-gray-100 shadow-lg text-center bg-light-gray/50 hover:shadow-2xl transition duration-300">
+                        <div class="w-16 h-16 bg-mint/20 text-mint rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-extrabold font-title">I</div>
+                        <h3 class="text-2xl font-bold font-title text-dark-gray mb-3">Inteligência: Lucro e Previsão</h3>
+                        <p class="text-gray-600">Com os dados organizados, fornecemos relatórios de Fluxo de Caixa e Projeção de Contas, transformando o "eu acho" em "decisões informadas de crescimento".</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- 4. SEÇÃO 2: METODOLOGIA R.O.I. - O Caminho da Organização (Reforça o Agile/Online) -->
+        <section id="metodologia" class="py-24 md:py-36 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <span class="text-sm font-semibold uppercase text-mint mb-3 block font-title tracking-widest text-center">ORGANIZAR PARA CRESCER</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-title text-center text-dark-gray mb-16">
+                    A Metodologia R.O.I. (Rotina, Organização, Inteligência)
+                </h2>
+
+            <div class="grid md:grid-cols-3 gap-10">
+            
+            <!-- Passo 1: Rotina Financeira (Destaque para o WhatsApp/Agilidade) -->
+            <div class="p-8 rounded-xl border border-gray-100 shadow-lg text-center bg-light-gray/50 hover:shadow-2xl transition duration-300">
+                <div class="w-16 h-16 bg-mint/20 text-mint rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-extrabold font-title">R</div>
+                <h3 class="text-2xl font-bold font-title text-dark-gray mb-3">Rotina: A Simplificação Personalizada</h3>
+                <p class="text-gray-600">Através de um processo simples via WhatsApp, o fluxo de caixa é organizado e estruturado de forma rápida e online, estabelecendo uma rotina segura e personalizada para a realidade do seu negócio.</p>
+            </div>
+
+            <!-- Passo 2: Organização Financeira -->
+            <div class="p-8 rounded-xl border border-gray-100 shadow-lg text-center bg-light-gray/50 hover:shadow-2xl transition duration-300">
+                <div class="w-16 h-16 bg-mint/20 text-mint rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-extrabold font-title">O</div>
+                <h3 class="text-2xl font-bold font-title text-dark-gray mb-3">Organização: O Controle Absoluto</h3>
+                <p class="text-gray-600">Centralizamos documentos, contas a pagar e a receber, realizamos conciliação bancária e a emissão de boletos e notas fiscais. Assim, você conquista clareza total sobre o seu caixa.
+            </div>
+
+            <!-- Passo 3: Inteligência Financeira -->
+            <div class="p-8 rounded-xl border border-gray-100 shadow-lg text-center bg-light-gray/50 hover:shadow-2xl transition duration-300">
+                <div class="w-16 h-16 bg-mint/20 text-mint rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-extrabold font-title">I</div>
+                <h3 class="text-2xl font-bold font-title text-dark-gray mb-3">Inteligência: Lucro e Previsão</h3>
+                <p class="text-gray-600">Com os dados organizados, fornecemos relatórios de Fluxo de Caixa e Projeção de Contas, transformando o “eu acho” em decisões informadas e estratégicas para o crescimento.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. SEÇÃO 3: RENDIMENTO E EVOLUÇÃO DOS LUCROS (O Resultado) -->
+
+        <section id="evolucao" class="py-24 md:py-36 bg-light-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-extrabold font-title text-dark-gray mb-16 text-center">
+                    Da Organização à Evolução dos Lucros
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    
+                    <div class="flex justify-center w-full">
+                        <img 
+                            src="img/grafico.jpg" 
+                            alt="Gráfico de evolução financeira"
+                            class="w-full h-auto max-w-xl rounded-3xl shadow-2xl border-4 border-white object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/700x500/5CCEA1/333333?text=Gráfico%20de%20Evolução%20Financeira'"
+                        >
+                    </div>
+
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-3xl font-bold font-title text-dark-gray mb-4">
+                            Seu Foco se Transforma em Rentabilidade
+                        </h3>
+                        <p class="text-gray-600 text-xl mb-8 leading-relaxed">
+                            Quando as finanças estão sob comando, sua energia é liberada para atuar como verdadeiro gestor do seu negócio. Isso impacta diretamente na sua linha de lucro:
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="bg-mint/10 p-2 rounded-lg mr-4">
+                                    <svg class="w-8 h-8 text-mint flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl font-title text-dark-gray">Visão de Crescimento</h4>
+                                    <p class="text-gray-600">Ajuda a entender onde fazer ajustes e como direcionar melhor os recursos para estimular o crescimento do negócio.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-mint/10 p-2 rounded-lg mr-4">
+                                    <svg class="w-8 h-8 text-mint flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2h-1a1 1 0 100 2h1a1 1 0 100 2h-1a3 3 0 01-3-3v-2a3 3 0 013-3h1z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl font-title text-dark-gray">Análise de Margem</h4>
+                                    <p class="text-gray-600">Relatórios precisos te mostram quais produtos/serviços são mais lucrativos, permitindo que você pare de perder tempo com o que não rende.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- 6. SEÇÃO 4: A FUNDADORA THAYNARA (O Toque Humano) - Destaque para BPO Financeiro -->
+        <!--<section id="fundadora" class="py-24 md:py-36 bg-white">
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">-->
+                
+
+                <!-- Conteúdo de Texto sobre a Fundadora -->
+                <!--<div class="order-2 md:order-1 flex flex-col items-center">
+
+                    <span class="text-3xl md:text-4xl font-bold uppercase text-mint mb-6 block font-title tracking-widest text-center">
+                        QUEM SOU EU?
+                    </span>
+
+                    <p class="text-base md:text-lg text-gray-600 leading-relaxed text-center max-w-2xl">
+                        Sou <strong>Thaynara Possamai Della</strong>, profissional da área financeira, com formação em Gestão Financeira e atuação focada na organização e no controle financeiro de pequenos e grandes negócios. 
+                        <br>
+                        <strong>Tecnóloga em Gestão Financeira</strong>, formada pela <strong>FAEL</strong>, e possuo formação profissional em <strong>Assistente Financeiro</strong>, realizada pela <strong>Faculdade Focus</strong>, curso no qual foi desenvolvido o método de trabalho aplicado atualmente no <strong>BPO Financeiro</strong>. 
+                        <br><br>
+                        Atuo como <strong>Assistente Financeira</strong>, oferecendo suporte financeiro e administrativo com foco na organização, na rotina e na inteligência financeira. 
+                        Meu trabalho é conduzido por método, consistência e confidencialidade, garantindo segurança no tratamento das informações. 
+                        Minha trajetória profissional inclui experiências nas áreas administrativa, financeira e de atendimento ao cliente, o que contribui para uma atuação organizada, responsável e próxima da realidade de cada negócio. 
+                    </p>
+                    <p class="text-base md:text-lg text-gray-500 leading-relaxed text-center max-w-2xl"></p>
+                    <strong>Meu objetivo é simplificar a gestão financeira, trazendo clareza, organização e tranquilidade para que o empreendedor tenha mais controle, segurança e tempo para focar no crescimento do seu negócio.</strong>
+                    </p>
+
+                </div>-->
+
+
+                <!-- Imagem da Fundadora -->
+                <!--<div class="flex justify-center order-1 md:order-2">
+                <img 
+                    src="img/foto_site_thaynara.jpeg" 
+                    alt="Foto de Thaynara, Fundadora da Finanças no Comando"
+                    class="w-80 h-[420px] md:w-96 md:h-[500px] object-cover rounded-2xl shadow-2xl border-4 border-mint/70 transform hover:scale-105 transition duration-500"
+                    onerror="this.onerror=null;this.src='https://placehold.co/400x520/5CCEA1/333333?text=Thaynara%0AFundadora'">
+                </div>
+
+            </div>
+        </section>-->
+        <section id="fundadora" class="py-24 md:py-36 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+                
+                <div class="relative flex justify-center order-2 md:order-1 md:mt-12 lg:mt-16">
+                    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-mint/5 rounded-full blur-3xl"></div>
+                    
+                    <div class="relative w-full max-w-[420px] lg:max-w-[480px]">
+                        <img 
+                            src="img/foto_site_thaynara.jpeg" 
+                            alt="Thaynara Possamai Della - Fundadora"
+                            class="relative z-10 w-full h-[550px] md:h-[600px] lg:h-[680px] object-cover rounded-[2rem] shadow-2xl border-b-8 border-r-8 border-mint/20 transform hover:scale-[1.01] transition duration-500"
+                            onerror="this.onerror=null;this.src='https://placehold.co/500x700/5CCEA1/333333?text=Thaynara%0AFundadora'">
+                        
+                        <div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-mint/20 rounded-tr-[2rem] z-0"></div>
+                    </div>
+                </div>
+
+                <div class="order-1 md:order-2 flex flex-col items-center md:items-start text-center md:text-left">
+                    <h2 class="text-3xl md:text-5xl font-bold text-mint mb-10 font-title tracking-widest uppercase">
+                        QUEM SOU EU?
+                    </h2>
+
+                    <div class="space-y-6 text-gray-600 text-base md:text-lg leading-relaxed">
+                        <p>
+                            Sou <strong>Thaynara Possamai Della</strong>, profissional da área financeira, com formação em Gestão Financeira e atuação focada na organização e no controle financeiro de pequenos e grandes negócios.
+                        </p>
+
+                        <p>
+                            <strong>Tecnóloga em Gestão Financeira</strong>, formada pela <strong>FAEL</strong>, e possuo formação profissional em <strong>Assistente Financeiro</strong>, realizada pela <strong>Faculdade Focus</strong>, curso no qual foi desenvolvido o método de trabalho aplicado atualmente no <strong>BPO Financeiro</strong>.
+                        </p>
+
+                        <p>
+                            Atuo como <strong>Assistente Financeira</strong>, oferecendo suporte financeiro e administrativo com foco na organização, na rotina e na inteligência financeira. Meu trabalho é conduzido por método, consistência e confidencialidade, garantindo segurança no tratamento das informações.
+                        </p>
+
+                        <p>
+                            Minha trajetória profissional inclui experiências nas áreas administrativa, financeira e de atendimento ao cliente, o que contribui para uma atuação organizada, responsável e próxima da realidade de cada negócio.
+                        </p>
+
+                        <div class="pt-6 border-l-2 border-mint/40 pl-8 mt-12">
+                            <p class="text-gray-500 text-lg md:text-xl font-light leading-relaxed italic font-serif">
+                                "Meu objetivo é simplificar a gestão financeira, trazendo clareza, organização e tranquilidade para que o empreendedor tenha mais controle, segurança e tempo para focar no crescimento do seu negócio."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. SEÇÃO DE SERVIÇOS DETALHADOS (Layout em Cards) -->
+        <section id="servicos" class="py-24 md:py-36 bg-light-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <span class="text-sm font-semibold uppercase text-dark-gray mb-3 block font-title tracking-widest text-center">NOSSOS ENTREGÁVEIS</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-title text-center text-dark-gray mb-16">
+                    O que a Assistência Financeira faz pelo seu negócio
+                </h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Serviço 1: Contas e Conciliação -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl border-t-4 border-mint">
+                        <svg class="w-10 h-10 text-dark-gray mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                        <h3 class="text-xl font-bold font-title text-dark-gray mb-3">Gestão de Contas e Fluxo</h3>
+                        <ul class="space-y-2 text-gray-600 text-base">
+                            <li>• Organização de Contas à Pagar</li>
+                            <li>• Controle de Contas à Receber</li>
+                            <li>• Conciliação Bancária</li>
+                        </ul>
+                    </div>
+
+                    <!-- Serviço 2: Cobrança e Documentação -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl border-t-4 border-mint">
+                        <svg class="w-10 h-10 text-dark-gray mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+                        <h3 class="text-xl font-bold font-title text-dark-gray mb-3">Faturamento e Documentação</h3>
+                        <ul class="space-y-2 text-gray-600 text-base">
+                            <li>• Emissão de Notas Fiscais</li>
+                            <li>• Emissão e Envio Digital de Boletos</li>
+                            <li>• Gestão de Documentos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Serviço 3: Relatórios e Estratégia -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl border-t-4 border-mint">
+                        <svg class="w-10 h-10 text-dark-gray mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                        <h3 class="text-xl font-bold font-title text-dark-gray mb-3">Análise e Previsibilidade</h3>
+                        <ul class="space-y-2 text-gray-600 text-base">
+                            <li>• Relatório de Fluxo de Caixa (Mensal)</li>
+                            <li>• Projeção de Contas e Cenários</li>
+                            <li>• Acompanhamento de Resultados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 8. CTA Final (Em Grafite Escuro) -->
+        <section id="contato" class="py-24 md:py-32 bg-dark-gray">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-5xl md:text-6xl font-extrabold font-title text-white mb-6 leading-tight">
+                    Foque no seu negócio. Nós cuidamos das finanças.
+                </h2>
+                <p class="text-xl text-gray-300 mb-12 font-body">
+                    A organização financeira é o pilar. Clique abaixo e fale diretamente com Thaynara.
+                </p>
+                <!-- Botão CTA Final (Frase de contato simplificada) -->
+                <a href="https://wa.me/4915213992164" target="_blank" class="inline-flex items-center justify-center px-12 py-4 text-xl font-bold btn-apple text-dark-gray bg-mint hover-mint-dark transition duration-500 transform hover:scale-105 font-title">
+                    ENTRE EM CONTATO VIA WHATSAPP
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 9. FOOTER (Rodapé) - Em Grafite -->
+    <footer class="bg-dark-gray/95 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start">
+            
+            <!-- Marca e Direitos Autorais -->
+            <div class="mb-8 md:mb-0 text-left">
+                <p class="text-3xl font-bold font-title tracking-tight text-white mb-2">Finanças no Comando</p>
+                <p class="text-sm text-gray-400 mt-2">Assistência Financeira Virtual. © 2024. Todos os direitos reservados.</p>
+            </div>
+
+            <!-- Navegação Rápida -->
+            <div class="flex space-x-12">
+                <div>
+                    <p class="font-semibold text-mint mb-3 uppercase tracking-wider">Acesso Rápido</p>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#organizacao" class="text-gray-400 hover:text-mint transition duration-300">Organização</a></li>
+                        <li><a href="#evolucao" class="text-gray-400 hover:text-mint transition duration-300">Evolução de Lucros</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-mint transition duration-300">Nossos Serviços</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-semibold text-mint mb-3 uppercase tracking-wider">Contato</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="text-gray-400">WhatsApp: +49 1521 3992164</li>
+                        <li class="text-gray-400">E-mail: financasnocomando@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>
